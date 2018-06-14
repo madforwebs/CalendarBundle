@@ -1,0 +1,8 @@
+parameters:
+    calendar.handler.class: MadForWebs\CalendarBundle\Service\CalendarHandler
+    api.calendar.madrid: "https://datos.madrid.es/egobfiles/MANUAL/300082/calendario_2017.txt"
+
+services:
+    mad_for_webs_calendar.handler:
+        class: %calendar.handler.class%
+        arguments: ["@doctrine.orm.entity_manager", '%api.calendar.madrid%']
