@@ -1,6 +1,6 @@
 parameters:
     calendar.handler.class: MadForWebs\CalendarBundle\Service\CalendarHandler
-    api.calendar.madrid: "https://datos.madrid.es/egobfiles/MANUAL/300082/calendario_2017.txt"
+    api.calendar.madrid: "https://datos.madrid.es/egobfiles/MANUAL/300082/calendario.txt"
 
 services:
     mad_for_webs_calendar.handler:
